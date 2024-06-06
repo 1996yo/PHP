@@ -1,10 +1,10 @@
-<?php 
-//用SESSION登入到布告欄
+<?php
+    #取消錯誤訊息
     error_reporting(0);
     session_start();
     if (!$_SESSION["id"]) {
         echo "請先登入";
-        echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>"; //3秒後跳回登入畫面
+        echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{
         echo "歡迎, ".$_SESSION["id"]."[<a href=12.logout.php>登出</a>] [<a href=18.user.php>管理使用者</a>] [<a href=22.bulletin_add_form.php>新增佈告</a>]<br>";

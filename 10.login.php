@@ -10,7 +10,6 @@
        $login=TRUE;
      }
    } 
-   //用SESSION來登入
    if ($login==TRUE) {
     session_start();
     $_SESSION["id"]=$_POST["id"];
